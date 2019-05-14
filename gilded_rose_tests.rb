@@ -57,13 +57,13 @@ class TestUntitled < Test::Unit::TestCase
   end
 
   def test_conjured
-    items = [Item.new('Conjured', 3, 40)]
+    items = [Item.new('Conjured Mana Cake', 3, 40)]
     GildedRose.new(items).update_quality()
     assert_equal items[0].quality, 38
   end
 
   def test_conjured_after_sellin_passed
-    items = [Item.new('Conjured', 0, 40)]
+    items = [Item.new('Conjured Mana Cake', 0, 40)]
     GildedRose.new(items).update_quality()
     assert_equal items[0].quality, 36
   end

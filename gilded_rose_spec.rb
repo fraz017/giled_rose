@@ -82,14 +82,14 @@ describe GildedRose do
 
     # Quality decrese twice for Conjured items within sell in date
     it 'check Conjured items' do
-      items = [Item.new('Conjured', 2, 20)]
+      items = [Item.new('Conjured Mana Cake', 2, 20)]
       GildedRose.new(items).update_quality()
       expect(items[0].quality).to eq 18
     end
 
     # Quality decrese twice for Conjured items if date is passed
     it 'check Conjured items' do
-      items = [Item.new('Conjured', 0, 20)]
+      items = [Item.new('Conjured Mana Cake', 0, 20)]
       GildedRose.new(items).update_quality()
       expect(items[0].quality).to eq 16
     end
