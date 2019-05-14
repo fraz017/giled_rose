@@ -10,7 +10,7 @@ class GildedRose
           if item.name != 'Sulfuras, Hand of Ragnaros'
             item.quality = item.quality - 1
           end
-          if item.name == 'Conjured' and item.quality > 0
+          if item.name == 'Conjured  Mana Cake' and item.quality > 0
             item.quality = item.quality - 1
           end
         end
@@ -41,7 +41,7 @@ class GildedRose
               if item.name != 'Sulfuras, Hand of Ragnaros'
                 item.quality = item.quality - 1
               end
-              if item.name == 'Conjured' and item.quality > 0
+              if item.name == 'Conjured  Mana Cake' and item.quality > 0
                 item.quality = item.quality - 1
               end
             end
